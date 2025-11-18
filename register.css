@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "barlow";
+    src: url(fonts/barlowReg.ttf);
+}
+
+@font-face {
+    font-family: "barlowBold";
+    src: url(fonts/Barlow-Bold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    width: 100vw;
+    height: 290vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;                                            
+}
+
+.container2{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto auto 50px;
+    
+    background-image: linear-gradient(to bottom right, black, rgb(21 35 85));
+    padding:  5vh  10vw  5vh  10vw;
+}
+
+.layers{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;  
+    padding-bottom: 10vh;  
+}
+
+.left{
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+
+.left div h1{
+    font-family: barlowBold;
+    color: white;
+    font-size: 3em;
+    line-height: 0.8;
+}
+
+.right{
+    position: relative;
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.right div{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0 20px 0;
+}
+
+.right div label{
+    font-family: barlow;
+    color: white;
+    font-size: 1.2em;
+}
+
+.right div input{
+    font-family: barlow;
+    color: rgb(5, 0, 0);
+    width: 80%;
+    height: 5vh;
+    border-radius: 30px;
+    margin-top: 8px;
+    padding: 0 2% 0 2%;
+    border: none;
+    text-align: right;
+}
+
+.right div select{
+    font-family: barlow;
+    color: rgb(5, 0, 0);
+    width: 80%;
+    height: 5vh;
+    border-radius: 30px;
+    margin-top: 8px;
+    padding: 0 2% 0 2%;
+    border: none;
+}
+
+.submit{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit button{
+    font-family: barlowBold;
+    color: black;
+    text-decoration: none;
+    margin: 0px 5vw 0px 5vw;
+    width: 30%;
+    height:50%;
+    border: none;
+    border-radius: 20px;
+}
+
+.popUpReg{
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+.popUpDivReg{
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    width: 60vw;
+    background-color: rgb(24, 24, 43);
+    font-family: barlowBold;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUpDivReg h1{
+    font-family: barlowBold;
+    color: white;
+    line-height: 4vw;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+.popUpDivReg button{
+    font-family: barlowBold;
+    color: black;
+    text-decoration: none;
+    width: 25vw;
+    height:5vh;
+    border: none;
+    border-radius: 20px;
+}
+
+form{
+    height: 100%;
+    margin-bottom: -1vh;
+}
+
+.warningMsg{
+    font-family: barlow;
+    color: rgb(247, 59, 59);
+    width: 100%;
+    margin: 10px 0  0 -10px;
+}
+
+.empty{
+    font-family: barlow;
+    color: rgb(5, 0, 0);
+    width: 80%;
+    height: 5vh;
+    border-radius: 30px;
+    margin-top: 8px;
+    padding: 0 2% 0 2%;
+    border: 5px solid red;
+}
+
+.terms{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: barlow;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    width: 100%;
+    height: fit-content;
+}
+
+.terms input{
+    transform: scale(1.6);
+    border: none;
+    margin-right: 2%;
+    width: auto;
+}
+
+.termsReq{
+    font-family: barlow;
+    font-size: .8em;
+    color: rgb(247, 59, 59);
+    width: 100%;
+    margin: -1px 0  50px -10px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

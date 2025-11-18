@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL INFO</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="/codes/WebDev/jquery-3.7.1.min.js"></script>
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+            <form action="" id="clearr">
+                <div class="layers">
+                    <div class="left">
+                        <div>
+                            <h1>PERSONAL<br>INFO</h1>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <label for="lName">LAST NAME</label><br>
+                            <input type="text" name="lName" id="lName">
+                        </div>
+                        <div>
+                            <label for="fName">FIRST NAME</label><br> 
+                            <input type="text" name="fName" id="fName"> 
+                        </div>
+                        <div>
+                            <label for="bDay" > BIRTH DATE</label><br>
+                            <input type="date" name="bDay" id="bDay" style="text-align: right;">
+                        </div>
+                        <div>
+                            <label for="address">HOME ADDRESS</label><br> 
+                            <input type="text" name="address" id="address"> 
+                        </div>
+                        <div>
+                            <label for="contact">CONTACT NUMBER</label><br>
+                            <input type="number" name="contact" id="contact"> 
+                        </div>
+                        <div>
+                            <label for="gender">GENDER</label><br>
+                            <select id="gender" name="gender" style="text-align: right;">
+                            <option value="NONE" selected>NONE</option>
+                            <option value="male">MALE</option>
+                            <option value="female">FEMALE</option>
+                            <option value="others">OTHER</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layers">
+                    <div class="left">
+                        <div>
+                            <h1>ACADEMIC<br>INFO</h1>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <label for="year">YEAR LEVEL</label><br>
+                            <select id="year" name="year" style="text-align: right;">
+                            <option value="NONE" selected>NONE</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="course">COURSE</label><br>
+                            <select id="course" name="course" style="text-align: right;">
+                            <option value="NONE" selected>NONE</option>
+                            <option value="BSBAFM" >Bachelor of Science in Business Administration Major in Financial Management(BSBAFM)</option>
+                            <option value="BS-ARCH">Bachelor of Science in Architecture (BS-ARCH)</option>
+                            <option value="BSBA-MM">Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM))</option>
+                            <option value="BEEd">Bachelor of Elementary Education (BEEd)</option>
+                            <option value="BSEd-E">Bachelor of Secondary Education Major in English(BSEd) </option>
+                            <option value="BSEd-M">Bachelor of Secondary Education Major in Mathematics(BSEd)</option>
+                            <option value="BSCS">Bachelor of Science in Computer Science (BSCS)</option>
+                            <option value="BSIT">Bachelor of Science in Information Technology (BSIT)</option>
+                            <option value="BSA">Bachelor of Science in Accountancy (BSA)</option>
+                            </select>   
+                        </div>         
+                    </div>
+                </div>
+                <div class="layers"  style="margin-bottom: 0px;">
+                    <div class="left">
+                        <div>
+                            <h1>ACCOUNT<br>INFO</h1>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <label for="email">EMAIL</label><br>
+                            <input type="text" name="" id="email"> 
+                        </div>
+                        <div>
+                            <label for="pass">PASSWORD</label><br>
+                            <input type="password" name="pass" id="pass">
+                        </div>
+                        <div>
+                            <label for="confirmPass">CONFIRM PASSWORD</label><br>
+                            <input type="password" name="confirmPass" id="confirmPass"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="terms" id="termsBox">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms" id="termsMsg">I AGREE ON TERMS AND CONDITIONS</label>
+                </div>
+
+            </form> 
+                <div class="submit">
+                    <button id="clear" onclick="clear1()">CLEAR</button>
+                    <button onclick="submit()" id="submit1">SUBMIT</button>
+                </div>
+            <script>
+
+            </script>
+        </div>
+    
+        <div class="popUpReg" id="popUpReg">
+            <div class="popUpDivReg" id="error">
+                <div>
+                    <h1>INPUT ERROR,<br>PLEASE FIX IT</h1>
+                </div>
+                <div>
+                    <button onclick="retryy()">CLOSE</button>
+                </div>
+            </div>
+            <div class="popUpDivReg" id="good">
+                <div>
+                    <h1>REGSITRATION<br>COMPLETE</h1>
+                </div>
+                <div>
+                    <button onclick="goodSubmit()">GO HOME</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
